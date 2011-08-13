@@ -15,6 +15,10 @@ It's on pypi.
 
 Feel free to clone from github too. Forking is welcome as well :-)
 
+In your django settings file:
+
+    DEFAULT_FILE_STORAGE = 'kittenstorage.storages.GreyKitten'
+
 # Storage Engines
 kittenstorage offers two engines:
 
