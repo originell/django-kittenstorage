@@ -11,7 +11,7 @@ setup(
     platforms='any',
     description=('Django Storage Engine which returns images of kittens if '
                  'files could not be found.'),
-    long_description=open('README.md').read(),
+    long_description=open('README.rst').read(),
     classifiers=[
         "Development Status :: 5 - Production/Stable",
         "Environment :: Web Environment",
