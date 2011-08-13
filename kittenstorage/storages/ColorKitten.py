@@ -18,7 +18,7 @@ class ColorKitten(FileSystemStorage):
             if not kittenz:
                 # Grab a kitten from placekitten.
                 response = urllib2.urlopen('http://placekitten.com/%s/%s'
-                                           % KITTEN_SIZE[0], KITTEN_SIZE[1])
+                                           % (KITTEN_SIZE[0], KITTEN_SIZE[1]))
                 kitten_img = response.read()
                 cache.set('kittenz', kitten_img)
                 kitten = tempfile.TemporaryFile()

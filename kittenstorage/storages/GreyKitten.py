@@ -19,7 +19,7 @@ class GreyKitten(FileSystemStorage):
                 # Grab a kitten from placekitten.
                 # /g/ means grayscale
                 response = urllib2.urlopen('http://placekitten.com/g/%s/%s'
-                                           % KITTEN_SIZE[0], KITTEN_SIZE[1])
+                                           % (KITTEN_SIZE[0], KITTEN_SIZE[1]))
                 kitten_img = response.read()
                 cache.set('kittenz', kitten_img)
                 kitten = tempfile.TemporaryFile()
