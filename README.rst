@@ -11,6 +11,8 @@ Therefore I have written this storage engine. In case a file is not found,
 an image from placekitten.com_ will be used/displayed
 instead.
 
+If you are sick of dogs, you might want to check out _django-dogstorage_.
+
 Setup
 =====
 It's on pypi.
